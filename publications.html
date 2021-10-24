@@ -13,33 +13,46 @@ Released for free under a Creative Commons Attribution 2.5 License
 </head>
 <body>
 <div id="header">
-	<h1><a href="#">Kazi Abu Zubair</a></h1>
+  <h1><a href="#">Kazi Abu Zubair</a></h1>
 </div>
 <div id="menu">
-	<ul>
-		<li><a href="index.html" accesskey="1" title="">Home</a></li>
-		<li><a href="publications.html" accesskey="2" title="">Publications</a></li>
-		<li><a href="contact.html" accesskey="3" title="">Contact</a></li>
-	</ul>
+  <ul>
+    <li><a href="index.html" accesskey="1" title="">Home</a></li>
+    <li><a href="publications.html" accesskey="2" title="">Publications</a></li>
+    <li><a href="contact.html" accesskey="3" title="">Contact</a></li>
+  </ul>
 </div>
 <div id="content">
 
 <h1>Publications:</h1>
 
 <ul>
-  <li><b>Kazi Abu Zubair</b>,  Sudhanva Gurumurthi,  Villas Sridharan,  Amro Awad,  <a href=MICRO21.pdf>“Soteria:  Towards  Resilient  Integrity-Protected  and  Encrypted  Non-Volatile  Memories”</a> in 54th IEEE/ACM International Symposium on Microarchitecture,MICRO-2021.</li>
+  <li><b>Kazi Abu Zubair</b>,  Sudhanva Gurumurthi,  Villas Sridharan,  Amro Awad,  <a href=MICRO21.pdf>“Soteria:  Towards  Resilient  Integrity-Protected  and  Encrypted  Non-Volatile  Memories”</a> in 54th IEEE/ACM International Symposium on Microarchitecture,<b>MICRO-2021</b>.</li>
+  <p><i>Secure Non-Volatile Memories (NVMs) need to maintain security metadata in NVM, which makes them vulnerable to memory errors. Erroneous security metadata can make gigabytes of data unverifiable and unusable. Moreover, error protection of security metadata is limited to hardware ECC as they are software-transparent. In this paper, we have shown how the availability of security metadata can be significantly improved at an extremely low cost without any complex ECC circuitry.</i></p>
   <li>Yu  Zou, <b>Kazi  Abu  Zubair</b>,  Mazen  Alwadi,  Rakin  Mohammad  Shadab,  Sanjay  Gandham,  Amro  Awad,  Minjie Lin, <a href=https://www.researchgate.net/publication/350892144_ARES_Persistently_Secure_Non-Volatile_Memory_with_Processor-Transparent_And_Hardware-Friendly_Integrity_Verification_And_Metadata_Recovery> “ARES: Persistently Secure Non-Volatile Memory with Processor-Transparent And Hardware-Friendly Integrity Verification And Metadata Recovery,”</a> ACM Transactions on Embedded Computing Systems, 2021</li>
+  <p><i>In this paper, we designed and implemented ARES, a new FPGA-assisted processor-transparent security mechanism. Given the growing prominence of CPU-FPGA heterogeneous computing architectures, ARES leverages FPGA’s hardware reconfigurability to offload performance-critical and security-related functions to the programmable hardware without microprocessors’ involvement. In particular, we propose a Merkle tree cache architecture that partitions a unified cache into multiple levels with parallel accesses and further modify the traditional Merkle tree verification and update processes to fully exploit the parallel cache ports and to fully pipeline time-consuming hashing operations.</i></p>
+
   <li> Mazen  Alwadi, <b>Kazi  Abu  Zubair</b>,  Aziz  Mohaisen,  and  Amro  Awad,  <a href=https://ieeexplore.ieee.org/abstract/document/9180062>“Phoenix:   Towards  Ultra-Low  Overhead, Recoverable, and Persistently Secure NVM,”</a> IEEE Transactions on Dependable and Secure Computing, 2020.</li>
+
+  <p><i>In this paper, we extend Anubis to further reduce the cost of guaranteeing fast recovery of parallel Tree-of-Counters (ToC).</i></p>
+
   <li><b>Kazi Abu Zubiar</b> and Amro Awad, <a href=http://nvmw.ucsd.edu/nvmw2020-program/unzip/current3/nvmw2020-final22.pdf>“Ensuring Fast Crash Recovery for Secure NVMs.”</a> in 11th Annual Non-Volatile Memories Workshop, NVMW-2020.</li>
-  <li><b>Kazi Abu Zubiar</b> and Amro Awad, <a href=ISCA19.pdf>“Anubis:  Ultra-Low  Overhead  and  Practical  Recovery  Time  for  Secure  Non-Volatile Memories.”</a>  in 46th International Symposium on Computer Architecture, ISCA-2019</li>
+
+
+  <li><b>Kazi Abu Zubiar</b> and Amro Awad, <a href=ISCA19.pdf>“Anubis:  Ultra-Low  Overhead  and  Practical  Recovery  Time  for  Secure  Non-Volatile Memories.”</a>  in 46th International Symposium on Computer Architecture, <b>ISCA-2019</b></li>
+
+  <p><i>A crash-consistent and secure system having Non-Volatile Memory (NVM) must adopt a security metadata recovery mechanism to maintain consistency between data and security metadata. Such a recovery process is time-consuming and can take hours. Anubis is the first work to propose an ultra-fast recovery mechanism that can finish the recovery process in a fraction of a second.</i></p>
+
   <li>Mao Ye, <b>Kazi Abu Zubair</b>, Aziz Mohaisen, and Amro Awad, <a href=https://ieeexplore.ieee.org/document/8836106> “Towards Low-Cost Mechanisms to Enable Restorationof Encrypted Non-Volatile Memories"</a>,IEEE Transactions on Dependable and Secure Computing, 2019</li>
-  <li>Amro Awad, Mao Ye, Yan Solihin, Laurent Njilla and <b>Kazi Abu Zubair</b>, <a href=https://dl.acm.org/doi/abs/10.1145/3307650.3322250>"Triad-NVM: Persistency for Integrity-Protected  and  Encrypted  Non-Volatile  Memories.” </a>   in  46th  International  Symposium  on  Computer  Architecture, ISCA-2019</li>
+  <p><i>Use of write-back volatile cache for caching security metadata (e.g., encryption counters) can improve performance significantly; however, it also causes post-crash inconsistency between data and security metadata. This paper proposes a low-cost recovery mechanism that can effectively recover encryption counters after a system crash by repurposing the ECC functionality.</i></p>
+
+  <li>Amro Awad, Mao Ye, Yan Solihin, Laurent Njilla and <b>Kazi Abu Zubair</b>, <a href=https://dl.acm.org/doi/abs/10.1145/3307650.3322250>"Triad-NVM: Persistency for Integrity-Protected  and  Encrypted  Non-Volatile  Memories.” </a>   in  46th  International  Symposium  on  Computer  Architecture, <b>ISCA-2019</b></li>
   <li>Amro  Awad,  Suboh  Suboh, <b>Kazi  Abu  Zubair</b>,  Mao  Ye  and  Mazen  Al-Wadi,  <a href=https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8839557>“Persistently-Secure  Processors: Challenges and Opportunities for Securing Non-Volatile Memories.”</a>  in IEEE Computer Society Annual Symposiumon VLSI, ISVLSI-2019.</li>
 
 </ul>  
 
 
-	<div style="clear: both;">&nbsp;</div>
+  <div style="clear: both;">&nbsp;</div>
 </div>
 
 

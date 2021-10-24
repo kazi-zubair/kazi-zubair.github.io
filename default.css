@@ -68,10 +68,16 @@ a:hover {
 	
 	font-size: 1.3em;
 
-	font-weight: bolder;
+	font-weight: bold;
+
+	font-family: fantasy;
 
 
 	color: #0c1045;
+}
+
+.description em {
+  color: #ffa500;
 }
 
 #header h1 {
