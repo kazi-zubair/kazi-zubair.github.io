@@ -9,9 +9,13 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #4B689A url(images/img1.jpg) repeat-x;
+
+	opacity: 0.85;
 	
 	color: #000000;
 }
+
+
 
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
@@ -48,10 +52,11 @@ a:hover {
 /* Header */
 
 #header {
-	width: 600px;
+	width: 900px;
 	height: 100px;
 	margin: 0 auto;
-	padding: 0 20px;
+	
+	padding-bottom: 30px;
 	background: url(images/img2.jpg);
 }
 
@@ -59,8 +64,14 @@ a:hover {
 	margin: 0;
 	text-decoration: none;
 	text-transform: uppercase;
-		padding: 30px 40px 10px 100px;
-	color: #FFFFFF;
+	padding: 0px 0px 0px 0px;
+	
+	font-size: 1.3em;
+
+	font-weight: bolder;
+
+
+	color: #0c1045;
 }
 
 #header h1 {
@@ -82,8 +93,8 @@ a:hover {
 	height: 20px;
 	margin: 0 auto;
 	padding: .5em 0;
-	background: #EBEEF2;
-	border: 10px solid #FFFFFF;
+	background: #b5bdc9;
+	border: 10px solid #73849e;
 }
 
 #menu ul {
@@ -100,7 +111,7 @@ a:hover {
 	display: block;
 	float: left;
 	width: 116px;
-	text-decoration: none;
+	text-decoration: underline;
 	text-align: center;
 	font: bold small "Arial Black", Arial, Helvetica, sans-serif;
 }
@@ -116,7 +127,7 @@ li:not(:last-child) {
 
 	margin: 0 auto;
 	padding: 10px 0 0 20px;
-	background: #FFFFFF url(images/img3.gif);
+	background: #b5bdc9 url(images/img3.gif);
 }
 
 #colOne {
