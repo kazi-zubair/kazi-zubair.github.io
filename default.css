@@ -8,7 +8,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 body {
 	margin: 0;
 	padding: 0;
-	background: #4B689A url(images/img5.jpg) round;
+	background: #c7cdd6 url(images/img5.jpg) round;
 
 	opacity: 0.85;
 	
@@ -70,7 +70,7 @@ a:hover {
 
 	font-weight: bold;
 
-	font-family: fantasy;
+	font-family: arial;
 
 
 	color: #0c1045;
@@ -99,7 +99,7 @@ a:hover {
 	height: 20px;
 	margin: 0 auto;
 	padding: .5em 0;
-	background: #b5bdc9;
+	background: #ffffff;
 	border: 10px solid #73849e;
 }
 
@@ -133,7 +133,8 @@ li:not(:last-child) {
 
 	margin: 0 auto;
 	padding: 10px 0 0 20px;
-	background: #b5bdc9 url(images/img3.gif);
+	font-family: arial;
+	background: #ffffff url(images/img3.gif);
 }
 
 #colOne {
