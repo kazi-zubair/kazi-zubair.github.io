@@ -9,8 +9,93 @@
 <!-- Privacy-friendly analytics. Replace YOURCODE with your goatcounter site code. -->
 <script data-goatcounter="https://YOURCODE.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+<style>
+	#gate {
+		position: fixed;
+		inset: 0;
+		z-index: 9999;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: linear-gradient(180deg, #eef2ff 0%, #e0f2fe 100%);
+	}
+	#gate .gate-card {
+		background: #fff;
+		padding: 40px 36px;
+		border-radius: 16px;
+		box-shadow: 0 10px 30px rgba(2, 6, 23, 0.12);
+		text-align: center;
+		max-width: 380px;
+		width: 90%;
+	}
+	#gate h2 {
+		margin: 0 0 8px;
+		font-family: 'Space Grotesk', sans-serif;
+		background: linear-gradient(90deg, #6366f1, #06b6d4);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+	#gate p { color: #64748b; margin: 0 0 22px; }
+	#gate input {
+		width: 100%;
+		padding: 12px 14px;
+		border: 1px solid #cbd5e1;
+		border-radius: 10px;
+		font-size: 1em;
+		margin-bottom: 14px;
+	}
+	#gate input:focus { outline: 2px solid #6366f1; border-color: #6366f1; }
+	#gate button {
+		width: 100%;
+		padding: 12px;
+		border: 0;
+		border-radius: 10px;
+		font-weight: 600;
+		font-size: 1em;
+		color: #fff;
+		cursor: pointer;
+		background: linear-gradient(90deg, #6366f1, #06b6d4);
+	}
+	#gate .gate-error { color: #dc2626; font-size: .9em; min-height: 18px; margin-top: 10px; }
+	body.locked { overflow: hidden; }
+</style>
 </head>
-<body>
+<body class="locked">
+
+<div id="gate">
+	<div class="gate-card">
+		<h2>🚧 Under Development</h2>
+		<p>This site is currently being updated. Enter the passcode to continue.</p>
+		<form onsubmit="return checkPass(event)">
+			<input type="password" id="gatePass" placeholder="Passcode" autofocus autocomplete="off" />
+			<button type="submit">Enter</button>
+			<div class="gate-error" id="gateError"></div>
+		</form>
+	</div>
+</div>
+
+<script>
+	(function () {
+		if (sessionStorage.getItem('siteUnlocked') === 'yes') {
+			document.getElementById('gate').style.display = 'none';
+			document.body.classList.remove('locked');
+		}
+	})();
+	function checkPass(e) {
+		e.preventDefault();
+		var val = document.getElementById('gatePass').value;
+		if (val === '112060') {
+			sessionStorage.setItem('siteUnlocked', 'yes');
+			document.getElementById('gate').style.display = 'none';
+			document.body.classList.remove('locked');
+		} else {
+			document.getElementById('gateError').textContent = 'Incorrect passcode. Try again.';
+			document.getElementById('gatePass').value = '';
+		}
+		return false;
+	}
+</script>
 <div id="header">
 	<h1><a href="index.html">Kazi Abu Zubair</a></h1>
 	<div class="tagline">CPU Architect @ Intel &middot; Ph.D. in Computer Engineering</div>
