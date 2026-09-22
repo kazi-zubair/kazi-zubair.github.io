@@ -26,15 +26,27 @@
 </div>
 <div id="content">
 	<h1>Blogs</h1>
-	<p>Thoughts, deep dives, and things I find interesting in computer
-	   architecture, security, and systems research.</p>
+	<p style="color:#64748b;">Thoughts, deep dives, and things I find interesting in
+	   computer architecture, security, and systems research.</p>
+
+	<div class="stats">
+		<div class="stat"><div class="num">🧠</div><div class="label">Architecture</div></div>
+		<div class="stat"><div class="num">🔐</div><div class="label">Security</div></div>
+		<div class="stat"><div class="num">⚙️</div><div class="label">Systems</div></div>
+	</div>
 
 	<div class="card">
-		<span class="badge">Coming soon</span>
-		<h3 style="border:none;margin-top:10px;">More posts on the way</h3>
+		<span class="badge amber">Coming soon</span>
+		<h3 style="margin:12px 0 6px;">More posts on the way</h3>
 		<p class="pub-desc">I'll be writing about CPU microarchitecture, memory
 		   security, and lessons from research vs. industry. Stay tuned!</p>
 	</div>
 </div>
+
+<div id="footer">
+	&copy; <span id="yr"></span> Kazi Abu Zubair
+	<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</div>
+
 </body>
 </html>

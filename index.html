@@ -112,19 +112,45 @@
 </div>
 <div id="content">
 
-<img src="images/kazi.jpg" class="profile-img" alt="Kazi Abu Zubair">
+<div class="hero">
+	<div class="avatar-wrap">
+		<img src="images/kazi.jpg" alt="Kazi Abu Zubair">
+	</div>
+	<div>
+		<div class="role"><span class="dot"></span> CPU Architect &middot; Intel</div>
+		<h1>Hi, I'm Kazi &#128075;</h1>
+		<p class="lead">
+			I design and analyze next-generation processor microarchitectures &mdash;
+			turning research ideas into practical, silicon-ready architecture.
+		</p>
+		<div class="chips">
+			<span class="chip">Microarchitecture</span>
+			<span class="chip">Memory Subsystems</span>
+			<span class="chip">Performance Modeling</span>
+			<span class="chip">Security &amp; Reliability</span>
+			<span class="chip">Computer Architecture</span>
+		</div>
+		<div class="btn-row">
+			<a class="btn" href="kazi_resume.pdf" data-goatcounter-click="resume-download" target="_blank" rel="noopener">&#128196; Download Resume</a>
+			<a class="btn ghost" href="publications.html">📚 Publications</a>
+		</div>
+	</div>
+</div>
 
-<h1>Hi, I'm Kazi &#128075;</h1>
+<div class="stats">
+	<div class="stat"><div class="num grad-text">Intel</div><div class="label">CPU Architect</div></div>
+	<div class="stat"><div class="num grad-text">Ph.D.</div><div class="label">Computer Engineering</div></div>
+	<div class="stat"><div class="num grad-text">ISCA · MICRO · HPCA</div><div class="label">Top-tier venues</div></div>
+</div>
 
+<h3>About</h3>
 <p>
 	I am a <b>CPU Architect at Intel</b>, where I work on the design and performance
 	of next-generation processor microarchitectures. My work spans
 	<b>core and memory-subsystem architecture</b>, performance modeling and
 	analysis, exploring architectural trade-offs, and driving
-	<b>security and reliability</b> features deep into the CPU pipeline. I enjoy
-	turning research ideas into practical, silicon-ready architecture.
+	<b>security and reliability</b> features deep into the CPU pipeline.
 </p>
-
 <p>
 	I earned my Ph.D. in <a href="https://ece.ncsu.edu/grad/phd/">Computer
 	Engineering</a> at <a href="https://www.ncsu.edu/">North Carolina State
@@ -137,7 +163,6 @@
 	<a href="publications.html">publications</a> and
 	<a href="https://scholar.google.com/citations?user=oM4qP5UAAAAJ&hl=en">Google Scholar</a> page.
 </p>
-
 <p>
 	Before my Ph.D., I earned a B.S. in Applied Physics, Electronics &amp;
 	Communication Engineering from the University of Chittagong, Bangladesh, and
@@ -147,17 +172,21 @@
 	<a href="https://www.linkedin.com/in/kzubair-bd/">LinkedIn</a>.
 </p>
 
-<p style="margin-top:26px;">
-	<a class="btn" href="kazi_resume.pdf" data-goatcounter-click="resume-download" target="_blank" rel="noopener">&#128196; Download Resume</a>
-</p>
-
 <h3>Recent News</h3>
-<ul>
-	<li><span class="badge">Intel</span> Joined Intel as a CPU Architect.</li>
-	<li><b>10/08/2021:</b> Our paper <i>FsEncr</i> accepted to HPCA-2022.</li>
-	<li><b>07/15/2021:</b> Our paper <i>Soteria</i> accepted to MICRO-2021.</li>
+<ul class="timeline">
+	<li><span class="when">2022 &ndash; Present</span> &nbsp;<span class="badge green">Intel</span><br>Joined Intel as a <b>CPU Architect</b>.</li>
+	<li><span class="when">10/08/2021</span><br>Our paper <i>FsEncr</i> accepted to <b>HPCA-2022</b>.</li>
+	<li><span class="when">07/15/2021</span><br>Our paper <i>Soteria</i> accepted to <b>MICRO-2021</b>.</li>
 </ul>
 
 </div>
+
+<div id="footer">
+	&copy; <span id="yr"></span> Kazi Abu Zubair &middot;
+	<a href="https://www.linkedin.com/in/kzubair-bd/">LinkedIn</a> &middot;
+	<a href="https://scholar.google.com/citations?user=oM4qP5UAAAAJ&hl=en">Scholar</a>
+	<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</div>
+
 </body>
 </html>
