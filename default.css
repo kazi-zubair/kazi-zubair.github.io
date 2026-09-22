@@ -66,14 +66,8 @@ p, ul { margin-top: 0; }
 }
 #header h1 { margin: 0; font-size: 2.4em; line-height: 1.05; }
 #header h1 a {
-	background: var(--grad-3);
-	background-size: 200% auto;
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
-	animation: shine 6s linear infinite;
+	color: var(--ink);
 }
-@keyframes shine { to { background-position: 200% center; } }
 #header .tagline {
 	color: var(--muted);
 	margin-top: 8px;
